@@ -43,7 +43,7 @@ footer a { text-decoration: none; }
 }
 
 a {
-  color: #613DC1;
+  color: rgb(96, 70, 175);
   text-decoration: none;
 }
 
@@ -56,9 +56,9 @@ header {
     position: relative;
     width: 100%;
     height: 1.75rem;
-    font-family: "Lucida Console" , "Liberation Mono";
+    /* font-family: "Lucida Console" , "Liberation Mono"; */
     font-size: .875rem;
-    background: #613DC1;
+    background: rgb(35, 30, 51);
     border-bottom: 1px solid #000;
 }
 
@@ -110,3 +110,13 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 tr:nth-child(even) { background: #eee }
+
+@media print {
+  nav, .article-meta, .menu {
+    display: none;
+  }
+  body {
+    font-size: 75%;
+  }
+}
+

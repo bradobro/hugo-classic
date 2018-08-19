@@ -1,9 +1,12 @@
     <footer>
       {{ partial "foot_custom.html" . }}
-      {{ with .Site.Params.footer }}
       <hr/>
+      {{ with .Site.Params.footer }}
       {{ . | markdownify }}
       {{ end }}
+      • <a href="{{ .URL }}">{{ .URL }}</a>
+      • revised {{ .Lastmod.Format "02 Jan 06 15:04 MST" }}
     </footer>
   </body>
 </html>
+
