@@ -111,6 +111,13 @@ table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 tr:nth-child(even) { background: #eee }
 
+/* additional custom */
+
+.available {
+  text-align: right;
+  font-size: 70%;
+}
+
 @media print {
   nav, .article-meta, .menu {
     display: none;
@@ -119,4 +126,3 @@ tr:nth-child(even) { background: #eee }
     font-size: 75%;
   }
 }
-
