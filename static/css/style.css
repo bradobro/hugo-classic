@@ -118,6 +118,11 @@ tr:nth-child(even) { background: #eee }
   font-size: 70%;
 }
 
+.inline-emphasis {
+  font-weight: bold;
+  color: #113
+}
+
 @media print {
   nav, .article-meta, .menu {
     display: none;
